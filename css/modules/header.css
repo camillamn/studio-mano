@@ -1,0 +1,8 @@
+header {
+	padding: 0.7rem;
+}
+
+.header__text {
+	font-family: var(--font-family);
+	font-size: var(--font-size-large);
+}

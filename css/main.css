@@ -1,0 +1,11 @@
+@import './variables.css';
+@import '.reset.css';
+@import './base.css';
+
+@import './modules/header.css';
+@import './modules/slideshow.css';
+@import './modules/footer.css';
+
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
