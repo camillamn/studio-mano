@@ -1,9 +1,20 @@
 header {
-	padding: 0.7rem;
 	background: none;
 }
 
 .header__text {
-	font-family: var(--font-family-header);
+	font-family: var(--font-family-main);
 	font-size: var(--font-size-large);
+}
+
+.hero {
+	width: 100vw;
+	height: 100vh;
+
+	/* https://codetheweb.blog/fullscreen-image-hero/ */
+	background-image: url(../../assets/images/hero_converted.jpeg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
