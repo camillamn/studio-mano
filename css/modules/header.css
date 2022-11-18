@@ -1,8 +1,9 @@
 header {
 	padding: 0.7rem;
+	background: none;
 }
 
 .header__text {
-	font-family: var(--font-family);
+	font-family: var(--font-family-header);
 	font-size: var(--font-size-large);
 }

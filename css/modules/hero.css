@@ -1,0 +1,12 @@
+.hero {
+	width: 100vw;
+	height: 100vh;
+
+	/* https://codetheweb.blog/fullscreen-image-hero/ */
+	background-image: url(../../assets/images/hero_cropped.jpeg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
