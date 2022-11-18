@@ -6,13 +6,15 @@
 	height: 80vh;
 }
 
-.slideshow__track {
-	object-fit: contain;
-}
-
 .slideshow__slide {
+	position: absolute;
 	width: 100%;
 	height: 100%;
+	display: none;
+}
+
+.slideshow__slide--active {
+	display: block;
 }
 
 .slideshow__image {
@@ -45,10 +47,32 @@
 	right: 1rem;
 }
 
-.slideshow__button:hover,
-.slideshow__button:focus {
+.slideshow__button-next:hover,
+.slideshow__button-previous:hover,
+.slideshow__button-next:focus,
+.slideshow__button-previous:focus {
 	color: white;
 	background-color: #000000;
 	outline: 1px solid black;
 	transition: background-color 0.6s ease;
+}
+
+.slideshow__navigator {
+	position: absolute;
+	bottom: 0;
+	padding: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	z-index: 20;
+	background: none;
+}
+
+.slideshow__navigator-dot--active,
+.slideshow__navigator-dot:hover {
+	background: black;
+	position: absolute;
+	bottom: 0;
 }
