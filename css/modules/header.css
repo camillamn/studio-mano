@@ -1,15 +1,13 @@
 header {
-	background: none;
-}
-
-.header__text {
-	font-family: var(--font-family-main);
-	font-size: var(--font-size-large);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero {
 	width: 100vw;
 	height: 100vh;
+	opacity: 0.8;
 
 	/* https://codetheweb.blog/fullscreen-image-hero/ */
 	background-image: url(../../assets/images/hero_converted.jpeg);
@@ -18,3 +16,14 @@ header {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+.hero__text {
+	background: none;
+	width: 100%;
+	opacity: 0.9;
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-large);
+	display: flex;
+	justify-content: center;
+}
+
