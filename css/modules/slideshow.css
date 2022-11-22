@@ -23,28 +23,21 @@
 	height: 100%;
 }
 
-.slideshow__button-previous {
+.slideshow__buttons {
 	cursor: pointer;
-	position: absolute;
 	z-index: 2;
-	background: none;
-	border: none;
-	font-family: var(--font-family-main);
-	font-size: var(--font-size-regular);
-	top: 50%;
+}
+
+.slideshow__button-previous {
+	position: absolute;
 	left: 1rem;
+	top: 50%;
 }
 
 .slideshow__button-next {
-	cursor: pointer;
 	position: absolute;
-	z-index: 2;
-	background: none;
-	border: none;
-	font-family: var(--font-family-header);
-	font-size: var(--font-size-regular);
-	top: 50%;
 	right: 1rem;
+	top: 50%;
 }
 
 .slideshow__button-next:hover,

@@ -54,7 +54,7 @@ export default function Slideshow() {
 			currentSlideIndex -= 1;
 		} else {
 			currentSlideIndex = slideshowSlides.length - 1;
-		}
+		} console.log(decreaseCurrentSlideIndex)
 	}
 
 	function increaseCurrentSlideIndex() {
@@ -83,5 +83,4 @@ export default function Slideshow() {
 		slideshowSlides[currentSlideIndex].classList.add('slideshow__slide--active');
 		navigatorDots[currentSlideIndex].classList.add('slideshow__navigator-dot--active');
 	}
-	
 }
