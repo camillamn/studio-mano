@@ -1,0 +1,19 @@
+.header__menu {
+	display: flex;
+	/* justify-content: center; */
+	align-content: space-between;
+}
+
+a {
+	font-family: var(	--font-family-main);
+	color: var(--color-text);
+	text-decoration: none;
+ }
+
+li {
+	list-style: none;
+}
+
+menu {
+	
+}
