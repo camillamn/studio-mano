@@ -1,5 +1,6 @@
-.header__menu {
+.header__navigation-menu {
 	display: flex;
+	justify-content: center;
 }
 
 a {
@@ -10,8 +11,4 @@ a {
 
 li {
 	list-style: none;
-}
-
-menu {
-	
 }

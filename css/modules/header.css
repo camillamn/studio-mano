@@ -20,9 +20,10 @@ header {
 .hero__text {
 	background: none;
 	width: 100%;
-	opacity: 0.9;
+	/* opacity: 0.9; */
 	font-family: var(--font-family-main);
 	font-size: var(--font-size-large);
+	letter-spacing: 0.5rem;
 	display: flex;
 	justify-content: center;
 }
