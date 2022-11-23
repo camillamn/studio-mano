@@ -1,6 +1,11 @@
-.header__navigation-menu {
+.header__navigation {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	display: none;
+}
+
+.header__navigation--visible {
+	display: block;
 }
 
 a {
