@@ -1,7 +1,8 @@
 .header__navigation {
 	display: flex;
-	flex-direction: column;
 	display: none;
+	position: absolute;
+	right: 1.5rem;
 }
 
 .header__navigation--visible {
@@ -12,8 +13,32 @@ a {
 	font-family: var(	--font-family-main);
 	color: var(--color-text);
 	text-decoration: none;
- }
+}
 
 li {
 	list-style: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.header__navigation {
+		display: flex;
+		flex-direction: column;
+		display: none;
+	}
+	
+	.header__navigation--visible {
+		display: block;
+	}
+	
+	a {
+		font-family: var(	--font-family-main);
+		color: var(--color-text);
+		text-decoration: none;
+	}
+	
+	li {
+		list-style: none;
+	}
 }

@@ -1,16 +1,9 @@
-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .hero {
 	width: 100vw;
 	height: 100vh;
 	opacity: 0.8;
 
-	/* https://codetheweb.blog/fullscreen-image-hero/ */
-	background-image: url(../../assets/images/hero_converted.jpeg);
+	background-image: url(../../assets/images/phone-hero.jpeg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -28,3 +21,28 @@ header {
 	justify-content: center;
 }
 
+.header__menu-button {
+	font-size: var(--font-size-large);
+}
+
+@media screen and (min-width: 768px) {
+	
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.hero {
+		/* https://codetheweb.blog/fullscreen-image-hero/ */
+		background-image: url(../../assets/images/hero_converted.jpeg);
+
+	}
+
+	.header__menu-button {
+		position: absolute;
+		right: 1.5rem;
+	}
+	
+}
+	
