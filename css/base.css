@@ -9,3 +9,24 @@
 	font-size: var(--font-size-regular);
 	cursor: pointer;
  }
+
+ h1 {
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-large);
+	letter-spacing: 0.5rem;
+ }
+
+ h2 {
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-regular);
+	letter-spacing: 0.2rem;
+	padding: 1rem;
+ }
+
+ p {
+	font-family: var(--font-family-second);
+	font-size: var(--font-size-regular);
+	letter-spacing: 0.02rem;
+	padding: 0.8rem;
+
+ }
