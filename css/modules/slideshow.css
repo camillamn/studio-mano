@@ -1,3 +1,9 @@
+.slideshow {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+}
 .slideshow__buttons {
 	display: none;
 }
@@ -5,79 +11,89 @@
 .slideshow__slide {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+	height: 100%;
+	margin-top: 5vh;
+}
+
+.slideshow__image {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (min-width: 768px) {
-	.slideshow {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		width: 100vw;
-		height: 80vh;
-	}
-	
-	.slideshow__slide {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		display: none;
-	}
-	
-	.slideshow__slide--active {
-		display: block;
-	}
-	
-	.slideshow__image {
-		object-fit: contain;
-		width: 100%;
-		height: 100%;
-	}
-	
-	.slideshow__buttons {
-		cursor: pointer;
-		display: block;
-		z-index: 2;
-	}
-	
-	.slideshow__button-previous {
-		position: absolute;
-		left: 1.5rem;
-		top: 50%;
-	}
-	
-	.slideshow__button-next {
-		position: absolute;
-		right: 1.5rem;
-		top: 50%;
-	}
-	
-	.slideshow__button-next:hover,
-	.slideshow__button-previous:hover,
-	.slideshow__button-next:focus,
-	.slideshow__button-previous:focus {
-		color: white;
-		background-color: #000000;
-		outline: 1px solid black;
-		transition: background-color 0.6s ease;
-	}
-	
-	.slideshow__navigator {
-		position: absolute;
-		bottom: 0;
-		padding: 0.5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		z-index: 20;
-		background: none;
-	}
-	
-	.slideshow__navigator-dot--active,
-	.slideshow__navigator-dot:hover {
-		background: black;
-		position: absolute;
-		bottom: 0;
-	}	
+
+.slideshow {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 80vh;
+}
+
+.slideshow__slide {
+	display: none;
+	position: absolute;
+
+}
+
+.slideshow__slide--active {
+	display: block;
+}
+
+.slideshow__image {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.slideshow__buttons {
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+}
+
+.slideshow__button-previous {
+	position: absolute;
+	left: 1.5rem;
+	top: 50%;
+}
+
+.slideshow__button-next {
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+}
+
+.slideshow__button-next:hover,
+.slideshow__button-previous:hover,
+.slideshow__button-next:focus,
+.slideshow__button-previous:focus {
+	color: white;
+	background-color: #000000;
+	outline: 1px solid black;
+	transition: background-color 0.6s ease;
+}
+
+.slideshow__navigator {
+	position: absolute;
+	bottom: 0;
+	padding: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	z-index: 20;
+	background: none;
+}
+
+.slideshow__navigator-dot--active,
+.slideshow__navigator-dot:hover {
+	background: black;
+	position: absolute;
+	bottom: 0;
+}	
 }
