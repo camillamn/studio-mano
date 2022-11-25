@@ -2,8 +2,9 @@
 	width: 100vw;
 	height: 100vh;
 	opacity: 0.8;
-
-	background-image: url(../../assets/images/phone-hero.jpeg);
+	
+	/* https://codetheweb.blog/fullscreen-image-hero/ */
+	background-image: url(../../assets/images/hero_converted.jpeg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -12,7 +13,6 @@
 
 .hero__text {
 	background: none;
-	width: 100%;
 	/* opacity: 0.9; */
 	font-family: var(--font-family-main);
 	font-size: var(--font-size-large);
@@ -34,11 +34,8 @@
 		align-items: center;
 	}
 	
-	.hero {
-		/* https://codetheweb.blog/fullscreen-image-hero/ */
-		background-image: url(../../assets/images/hero_converted.jpeg);
 
-	}
+
 
 	.header__menu-button {
 		position: absolute;
