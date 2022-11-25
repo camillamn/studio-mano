@@ -22,7 +22,14 @@
 		margin: 1.5rem;
 	}
 
+	.about__image {
+		width: 45vw;
+		height: 60vh;
+		object-fit: contain;
+	}
+
 	.about__text {
+		width: 45vw;
 		margin: 2rem;
 	}
 }

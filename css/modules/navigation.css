@@ -15,7 +15,7 @@
 
 .header__menu {
 	margin-top: 3vh;
-	margin-bottom: 5vh;
+	margin-bottom: 3vh;
 	font-size: x-large;
 }
 
@@ -37,12 +37,13 @@ li {
 		display: flex;
 		flex-direction: column;
 		display: none;
-		position: absolute;
+		justify-content: center;
 	}
 	
 	.header__navigation--visible {
 		display: block;
 		background: none;
+		height: 5vh;
 	}
 	
 	a {
