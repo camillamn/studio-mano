@@ -1,3 +1,5 @@
+/*	mobile first */
+
 .hero {
 	width: 100vw;
 	height: 100vh;
@@ -19,11 +21,22 @@
 	letter-spacing: 0.5rem;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin: 1rem;
 }
 
 .header__menu-button {
 	font-size: var(--font-size-large);
+	position: absolute;
+	left: 1.5rem;
+	display: flex;
+	justify-content: end;
+	opacity: 0.8;
+}
+
+.header__menu-button-icon {
+	width: 1.5rem;
+	height: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,7 +50,6 @@
 	.header__menu-button {
 		position: absolute;
 		right: 1.5rem;
-		font-size: larger;
 	}
 	
 }
