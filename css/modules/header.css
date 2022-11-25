@@ -37,6 +37,7 @@
 	.header__menu-button {
 		position: absolute;
 		right: 1.5rem;
+		font-size: larger;
 	}
 	
 }

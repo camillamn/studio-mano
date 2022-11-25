@@ -1,8 +1,10 @@
 footer {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	height: 15vh;
 }
 
-.footer__copyright {
+.footer__container {
 	font-family: var(--font-family-main);
 }
