@@ -4,6 +4,7 @@
 
 @import './modules/about.css';
 @import './modules/contact.css';
+/* @import './modules/hambuger.css'; */
 @import './modules/header.css';
 @import './modules/navigation.css';
 @import './modules/slideshow.css';
@@ -12,4 +13,5 @@
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');

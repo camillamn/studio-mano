@@ -62,6 +62,6 @@ li {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		font-size: larger;
+		font-size: large;
 	}
 }

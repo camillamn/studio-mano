@@ -23,13 +23,13 @@
 	}
 
 	.about__image {
+		height: 80vh;
 		width: 45vw;
-		height: 60vh;
 		object-fit: contain;
 	}
 
 	.about__text {
 		width: 45vw;
-		margin: 2rem;
+		/* margin: 2rem; */
 	}
 }

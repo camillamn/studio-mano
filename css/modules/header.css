@@ -15,7 +15,7 @@
 
 .hero__text {
 	background: none;
-	/* opacity: 0.9; */
+	opacity: 0.9;
 	font-family: var(--font-family-main);
 	font-size: var(--font-size-large);
 	letter-spacing: 0.5rem;
@@ -32,6 +32,7 @@
 	display: flex;
 	justify-content: end;
 	opacity: 0.8;
+	width: 10vw;
 }
 
 .header__menu-button-icon {
@@ -47,10 +48,11 @@
 		align-items: center;
 	}
 
-	.header__menu-button {
+	/* .header__menu-button {
 		position: absolute;
 		right: 1.5rem;
-	}
+		left: auto;
+	} */
 	
 }
 	
