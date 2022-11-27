@@ -4,7 +4,7 @@
 
 @import './modules/about.css';
 @import './modules/contact.css';
-/* @import './modules/hambuger.css'; */
+@import './modules/hamburger.css';
 @import './modules/header.css';
 @import './modules/navigation.css';
 @import './modules/slideshow.css';

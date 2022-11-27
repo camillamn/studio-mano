@@ -26,6 +26,10 @@
 }
 
 .header__menu-button {
+	left: 10vw;
+}
+
+/* .header__menu-button {
 	font-size: var(--font-size-large);
 	position: absolute;
 	left: 1.5rem;
@@ -38,7 +42,7 @@
 .header__menu-button-icon {
 	width: 1.5rem;
 	height: 1.5rem;
-}
+} */
 
 @media screen and (min-width: 768px) {
 	
