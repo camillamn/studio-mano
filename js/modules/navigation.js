@@ -3,7 +3,7 @@ export default function Navigation() {
    /* model */
     let navigationVisible = false; 
 
-    /* QuerySelectors */
+    /* query selectors */
 	 
 	 // create a reference to the Block (BEM) element
 	 const menu = document.querySelector('.header');

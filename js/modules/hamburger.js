@@ -1,13 +1,21 @@
 export default function Hamburger() {
-	const menuButton = document.querySelector('.header__menu-button');
+	
+	/* model */
 	let menuVisible = false;
+
+	/* query selectors */
+	// create a reference to the Block (BEM) element
+	const menuButton = document.querySelector('.header__menu-button');
+	
+	/* event listener */
 	menuButton.addEventListener('click', () => {
-		if(!menuVisible) {
+		menuVisible = !menuVisible;
+
+	/* event handlers */
+		if(menuVisible) {
 			menuButton.classList.add('header__menu-button--visible');
-			menuVisible = true;
 		} else {
 			menuButton.classList.remove('header__menu-button--visible');
-			menuVisible = false;
 		}
 	});
 }

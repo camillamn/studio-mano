@@ -1,3 +1,8 @@
+/*
+	 used the following link as a reference when I made the animated hamburger-button
+	 https://www.youtube.com/watch?v=dIyVTjJAkLw 
+*/
+
 .header__menu-button {
 	position: relative;
 	display: flex;
@@ -13,9 +18,9 @@
 .header__menu-button-burger {
 	width: 1.5rem;
 	height: 0.2vh;
+	opacity: 0.7;
 	background-color: black;
 	border-radius: 5px;
-	/* box-shadow: 0 2px 5px turquoise; */
 	transition: all 0.5s ease-in-out;
 }
 
@@ -28,7 +33,6 @@
 	height: 0.2vh;
 	background: black;
 	border-radius: 5px;
-	/* box-shadow: 0 2px 5px turquoise; */
 	transition: all 0.5s ease-in-out;
 }
 

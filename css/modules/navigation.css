@@ -28,6 +28,7 @@ a {
 li {
 	list-style: none;
 	margin-top: 3vh;
+	transition: all 0.5s ease-in-out;
 }
 
 

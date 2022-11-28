@@ -22,27 +22,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 1rem;
+	margin: 0 2vw 2vh 2vw;
+	padding-top: 2.5vh;
 }
-
-.header__menu-button {
-	left: 10vw;
-}
-
-/* .header__menu-button {
-	font-size: var(--font-size-large);
-	position: absolute;
-	left: 1.5rem;
-	display: flex;
-	justify-content: end;
-	opacity: 0.8;
-	width: 10vw;
-}
-
-.header__menu-button-icon {
-	width: 1.5rem;
-	height: 1.5rem;
-} */
 
 @media screen and (min-width: 768px) {
 	
@@ -51,12 +33,6 @@
 		justify-content: center;
 		align-items: center;
 	}
-
-	/* .header__menu-button {
-		position: absolute;
-		right: 1.5rem;
-		left: auto;
-	} */
 	
 }
 	
