@@ -6,13 +6,12 @@
 .header__menu-button {
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-items: center;
 	align-items: center;
 	width: 1.5rem;
 	height: 1.5rem;
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
-	/* border: 3px solid black; */
+	/* transition: all 0.5s ease-in-out; */
 }
 
 .header__menu-button-burger {
@@ -36,22 +35,26 @@
 	transition: all 0.5s ease-in-out;
 }
 
+/* moves the burger-top 8px over the burger */
 .header__menu-button-burger::before {
 	transform: translateY(-8px);
 }
 
+/* moves the burger-bottom 8px below the burger */
 .header__menu-button-burger::after {
 	transform: translateY(8px);
 }
 
 /* animation */
 
+/* makes the burger go away when menu is visible */
 .header__menu-button--visible .header__menu-button-burger {
 	transform: translateX(-50px);
 	background: transparent;
 	box-shadow: none;
 }
 
+/* makes the top and bottom (before and after) rotate 45degrees to make a cross */
 .header__menu-button--visible .header__menu-button-burger::before {
 	transform: rotate(45deg) translate(35px, -35px);
 }
