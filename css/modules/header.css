@@ -4,8 +4,7 @@
 	width: 100vw;
 	height: 100vh;
 	opacity: 0.8;
-	/* display: flex;
-	justify-content: center; */
+
 	
 	/* https://codetheweb.blog/fullscreen-image-hero/ */
 	background-image: url(../../assets/images/hero_converted_portrait.jpg);
@@ -30,7 +29,7 @@
 }
 
 .header__headline {
-	font-size: var(--font-size-regular);
+	font-size: var(--font-size-mobile);
 	justify-self: center;
 }
 
@@ -40,6 +39,7 @@
 	justify-self: end;
 }
 
+/* for tablets */
 @media screen and (min-width: 480px) {
 	.header__headline {
 		font-size: var(--font-size-large);
@@ -52,11 +52,6 @@
 		background-image: url(../../assets/images/hero_converted.jpeg);
 	}
 	
-	/* header {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	} */
 	
 }
 	
