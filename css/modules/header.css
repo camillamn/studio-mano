@@ -4,6 +4,8 @@
 	width: 100vw;
 	height: 100vh;
 	opacity: 0.8;
+	/* display: flex;
+	justify-content: center; */
 	
 	/* https://codetheweb.blog/fullscreen-image-hero/ */
 	background-image: url(../../assets/images/hero_converted_portrait.jpg);
@@ -13,17 +15,29 @@
 	background-attachment: fixed;
 }
 
-.hero__text {
+.header__content {
+	display: grid;
+	grid-template-columns: 10vw 60vw 10vw;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5vw;
 	background: none;
 	opacity: 0.9;
 	font-family: var(--font-family-main);
 	font-size: var(--font-size-large);
 	letter-spacing: 0.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: 0 2vw 2vh 2vw;
 	padding-top: 2.5vh;
+}
+
+.header__headline {
+	justify-self: center;
+}
+
+.header__search {
+	font-family: var(--font-family-main);
+	font-size: 1rem;
+	justify-self: end;
 }
 
 @media screen and (min-width: 768px) {
@@ -32,11 +46,11 @@
 		background-image: url(../../assets/images/hero_converted.jpeg);
 	}
 	
-	header {
+	/* header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
+	} */
 	
 }
 	

@@ -6,7 +6,6 @@
 .header__menu-button {
 	position: relative;
 	display: flex;
-	justify-items: center;
 	align-items: center;
 	width: 1.5rem;
 	height: 1.5rem;
