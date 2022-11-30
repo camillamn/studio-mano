@@ -9,15 +9,67 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="header">
 			<section>
-				<h1 class="header__content"><a href="index.html">studio mano</a></h1>
+				<div class="header__content">
+					<!-- Animated hamburger-menu-button	-->
+					<button class="header__menu-button">
+						<div class="header__menu-button-burger"></div>
+					</button>
+					<h1 class="header__headline">
+						<a href="index.html">studio mano</a>
+					</h1>
+				</div>
+				
+				<!-- Navigation -->
+				<nav class="header__navigation">
 
+					<menu class="header__menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="shop.html">Shop</a></li>
+					</menu>	
+				</nav>
 			</section>
 		</header>
 		
 		<main>
 
+			<div class="contact__container">
+				<figure>
+					<img 
+						class="contact__image"
+						src="./assets/images/DSC02838.jpg" 
+						alt="picture of the artist Mano">
+				</figure>
+				<section class="contact__content">
+					<h2>Shop is coming soon...</h2>
+					<p class="contact__text">
+						Meanwhile, if you are interested in taking a closer look or buy some of the stuff I have made, you are welcome to send me a DM on
+						<a 
+							class="contact__link"	
+							href="https://www.instagram.com/mano_mudworks/"
+							>Instagram
+						</a> 
+						or send me an e-mail 
+						<a 
+							class="contact__link"
+							href="mailto:camilla.meskestad@gmail.com?subject=Hello!">camilla.meskestad@gmail.com
+						</a>.
+					</p>
+				</section>
+			</div>
+
+
 		</main>
+
+		<footer>
+			<div class="footer__container">
+				2022 studio mano
+			</div>
+
+		</footer>
 	</body>
 </html>
