@@ -1,4 +1,5 @@
 export default function Navigation() {
+	// declarative code
 
    /* model */
     let navigationVisible = false; 

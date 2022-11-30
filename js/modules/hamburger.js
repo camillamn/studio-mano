@@ -1,5 +1,6 @@
 export default function Hamburger() {
-	
+	// imperative code
+
 	/* model */
 	let menuVisible = false;
 
@@ -8,14 +9,24 @@ export default function Hamburger() {
 	const menuButton = document.querySelector('.header__menu-button');
 	
 	/* event listener */
-	menuButton.addEventListener('click', () => {
-		menuVisible = !menuVisible;
+	if (menuButton) {
+		menuButton.addEventListener('click', handleMenuButtonClick);
+	}
 
-	/* event handlers */
+	function handleMenuButtonClick() {
+		toggleMenuVisibility();
+		renderHTML();
+	}
+
+	function toggleMenuVisibility() {
+		menuVisible = !menuVisible;
+	}
+
+	function renderHTML() {
 		if(menuVisible) {
 			menuButton.classList.add('header__menu-button--visible');
 		} else {
 			menuButton.classList.remove('header__menu-button--visible');
 		}
-	});
+	}
 }
