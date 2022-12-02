@@ -1,9 +1,8 @@
 /* mobile and tablet */
 
 .gallery {
-	display: flex;
-	justify-content: center;
 	height: 90vh;
+	margin: 5vw;
 }
 
 .slideshow {
@@ -11,6 +10,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.slideshow__subtitle {
+	align-self: center;
 }
 
 .slideshow__buttons {
@@ -21,7 +24,7 @@
 	display: flex;
 	justify-items: center;
 	flex-direction: column;
-	width: 80vw;
+	width: 90vw;
 	margin-top: 2vh;
 }
 

@@ -6,7 +6,7 @@
 }
 
 .contact__container {
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	/* justify-items: center; */
 	flex-direction: column;
