@@ -62,13 +62,18 @@
 	.shop__card {
 		width: 30vw;
 		overflow: hidden;
+		transition-timing-function: ease;
+		transition-duration: 1.5s;
+		transition-delay: 0.2s;
 	}
 
 	.shop__image-container {
 		grid-template-columns: repeat(3, minmax(0,1fr));
+
 	} 
 
 	.shop__card-image:hover {
-		transform: scale(1.2); 
+		transform: scale(1.2);
+		transition: ease 1.5s;
 	}
 }
