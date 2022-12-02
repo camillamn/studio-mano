@@ -44,6 +44,7 @@
 .shop__card-text {
 	font-family: var(--font-family-second);
 	font-size: var(--font-size-large);
+	align-self: center;
 }
 
 /* for tablets */
@@ -53,7 +54,7 @@
 	}
 
 	.shop__image-container {
-	grid-template-columns: repeat(2, minmax(0,1fr));
+		grid-template-columns: repeat(2, minmax(0,1fr));
 	} 
 	
 }
@@ -62,7 +63,7 @@
 	.shop__card {
 		width: 30vw;
 		overflow: hidden;
-		transition-timing-function: ease;
+		transition-timing-function: ease-in;
 		transition-duration: 1.5s;
 		transition-delay: 0.2s;
 	}

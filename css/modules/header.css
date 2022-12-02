@@ -16,16 +16,15 @@
 
 .header__content {
 	display: grid;
-	grid-template-columns: 10vw 60vw 10vw;
+	grid-template-columns: 15vw 60vw 15vw;
 	justify-content: center;
 	align-items: center;
-	padding: 0 5vw;
 	background: none;
 	opacity: 0.9;
 	font-family: var(--font-family-main);
 	letter-spacing: 0.5rem;
-	margin: 0 2vw 2vh 2vw;
-	padding-top: 2.5vh;
+	padding-top: 3vw;
+	margin: 0 5vw 3vw 5vw;
 }
 
 .header__headline {
