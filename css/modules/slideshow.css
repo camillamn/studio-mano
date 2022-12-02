@@ -73,6 +73,7 @@
 	border-width: 1px 1px 0 0;
 }
 
+/* rotate the button to be an arrow left */ 
 .slideshow__button-previous {
 	position: absolute;
 	transform: rotate(225deg);
@@ -80,6 +81,7 @@
 	top: 50%;
 }
 
+/* rotate the button to be an arrow right */ 
 .slideshow__button-next {
 	position: absolute;
 	transform: rotate(45deg);
