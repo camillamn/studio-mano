@@ -52,9 +52,14 @@
 		width: 42vw;
 		padding-left: 3vw;
 		justify-content: center;
+		align-items: baseline;
 		/* margin: 2rem; */
 	}
 	
+	.about__text-content h2 {
+		align-self: center;
+	}
+
 	.about__text {
 		padding: 1vw 0;
 	}
