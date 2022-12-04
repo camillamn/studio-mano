@@ -38,7 +38,7 @@ export default function Navigation() {
 	// this function renders (updates) the needed HTML DOM elements based
 	// on the values of the model. this has to be called after the model
 	// has been updated and should preferrably be called once per update,
-	// and only from the handler function
+	// and only from the handler-function
    function renderHTML() {
       if (navigationVisible === true) {
          headerNavigation.classList.add('header__navigation--visible');
