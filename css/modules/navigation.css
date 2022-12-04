@@ -5,12 +5,12 @@
 }
 
 .header__navigation--visible {
-	display: block;
-	display: flex;
-	background-color: var(--background);
-	opacity: 0.9;
 	width: 100vw;
 	height: 100vh;
+	background-color: var(--background);
+	display: block;
+	display: flex;
+	opacity: 0.9;
 
 }
 
@@ -36,9 +36,8 @@ li {
 @media screen and (min-width: 768px) {
 	
 	.header__navigation {
-		display: flex;
-		flex-direction: column;
 		display: none;
+		flex-direction: column;
 		justify-content: center;
 	}
 	

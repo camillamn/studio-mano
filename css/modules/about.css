@@ -7,11 +7,8 @@
 .about__container {
 	width: 100%;
 	display: flex;
-	/* justify-items: center; */
 	flex-direction: column;
-	/* align-items: center; */
 	padding-top: 2rem;
-	/* padding: 2vw 5vw 0 5vw; */
 }
 
 .about__text-content {
@@ -53,7 +50,6 @@
 		padding-left: 3vw;
 		justify-content: center;
 		align-items: baseline;
-		/* margin: 2rem; */
 	}
 	
 	.about__text-content h2 {

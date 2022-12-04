@@ -26,11 +26,11 @@
 }
 
 .header__content {
+	background: none;
 	display: grid;
 	grid-template-columns: 15vw 60vw 15vw;
 	justify-content: center;
 	align-items: center;
-	background: none;
 	opacity: 0.9;
 	font-family: var(--font-family-main);
 	letter-spacing: 0.5rem;
@@ -43,11 +43,6 @@
 	justify-self: center;
 }
 
-/* .header__search {
-	font-family: var(--font-family-main);
-	font-size: 1rem;
-	justify-self: end;
-} */
 
 /* for tablets */
 @media screen and (min-width: 480px) {
@@ -63,9 +58,5 @@
 		background-image: url(../../assets/images/hero_converted.jpeg);
 	}
 	
-	/* .header__content {
-	position: sticky;
-	transition: all 0.5s ease;
-	} */
 }
 	

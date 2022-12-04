@@ -8,9 +8,7 @@
 .contact__container {
 	width: 100%;
 	display: flex;
-	/* justify-items: center; */
 	flex-direction: column;
-	/* align-items: center; */
 	padding-top: 2rem;
 }
 
@@ -58,9 +56,8 @@
 		padding-left: 3vw;
 		justify-content: center;
 		align-items: baseline;
-		/* margin: 2rem; */
-		/* align-items: flex-start; */
 	}
+
 	.contact__content h2 {
 		align-self: center;
 	}

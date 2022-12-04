@@ -4,11 +4,11 @@
 */
 
 .header__menu-button {
+	width: 1.5rem;
+	height: 1.5rem;
 	position: relative;
 	display: flex;
 	align-items: center;
-	width: 1.5rem;
-	height: 1.5rem;
 	cursor: pointer;
 	/* transition: all 0.5s ease-in-out; */
 }
@@ -16,8 +16,8 @@
 .header__menu-button-burger {
 	width: 1.5rem;
 	height: 0.18vh;
-	opacity: 0.7;
 	background-color: black;
+	opacity: 0.7;
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
 }
@@ -25,11 +25,11 @@
 .header__menu-button-burger::before,
 .header__menu-button-burger::after {
 	content: '';
-	position: absolute;
-	left: 0;
 	width: 1.5rem;
 	height: 0.18vh;
 	background: black;
+	position: absolute;
+	left: 0;
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
 }
@@ -53,7 +53,7 @@
 	box-shadow: none;
 }
 
-/* makes the top and bottom (before and after) rotate 45degrees to make a cross */
+/* makes the top and bottom (before and after) rotate 45degrees to make an X */
 .header__menu-button--visible .header__menu-button-burger::before {
 	transform: rotate(45deg) translate(35px, -35px);
 }

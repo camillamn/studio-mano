@@ -7,7 +7,7 @@ export default function Hamburger() {
 	// create a reference to the Block (BEM) element
 	const menuButton = document.querySelector('.header__menu-button');
 	
-	// check if the menuButton exists before attaching an "event-listener"
+	// check if the "menuButton" exists before attaching an "event-listener"
 	// in this case the menuButton on header exists on every page, so the condition will always be true
 	if (menuButton) {
 		menuButton.addEventListener('click', handleMenuButtonClick);
@@ -24,7 +24,7 @@ export default function Hamburger() {
 	}
 
 	// "methods"
-	// the main purpose of these methods is to mutate model variables,
+	// the purpose of these methods is to mutate model variables,
 	// and nothing else. these methods should not be bothered with how the
 	// model is presented to the user, but only what the functionality is
 	function toggleMenuVisibility() {
