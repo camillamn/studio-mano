@@ -2,7 +2,7 @@ export default function Navigation() {
 	// declarative code
 
 	// "model"
-	// an abstraction oof the HTML (view)
+	// an abstraction of the HTML (view)
    let navigationVisible = false; 
 	 
 	// create a reference to the Block (BEM) element
@@ -10,7 +10,7 @@ export default function Navigation() {
    const menuButton = document.querySelector('.header__menu-button');
    const headerNavigation = document.querySelector('.header__navigation');
 
-	// check if Block exists before adding any other event listeners
+	// check if block exists before adding any other event listeners
 	// in this case the menu in header exists on every page, so the condition will always be true
 	if (menu) {
 		menuButton.addEventListener('click', handleMenuButtonClick);
