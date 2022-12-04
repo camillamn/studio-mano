@@ -37,101 +37,115 @@
 /* desktop */
 @media screen and (min-width: 768px) {
 
-.slideshow {
-	height: 100%;
-	flex-direction: row;
-	justify-items: space-between;
-}
+	.slideshow {
+		height: 100%;
+		flex-direction: row;
+		justify-items: space-between;
+		transition: transform 0.5s ease;
+	}
 
-.slideshow__subtitle {
-	display: none;
-}
+	.slideshow__subtitle {
+		display: none;
+	}
 
-.slideshow__slide {
-	height: 100%;
-	margin-top: 0;
-	display: none;
-	position: absolute;
-}
+	.slideshow__slide {
+		height: 100%;
+		margin-top: 0;
+		display: none;
+		position: absolute;
+	}
 
-.slideshow__slide--active {
-	display: block;
-}
+	.slideshow__slide--active {
+		display: block;
+	}
 
-.slideshow__image {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-}
+	.slideshow__image {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
 
-.slideshow__buttons {
-	width: 100%;
-	display: block;
-	display: flex;
-	cursor: pointer;
-	z-index: 2;
-}
+	.slideshow__buttons {
+		width: 100%;
+		display: block;
+		display: flex;
+		cursor: pointer;
+		z-index: 2;
+	}
 
-.slideshow__button-previous,
-.slideshow__button-next {
-	content: '';
-	width: 2vw;
-	height: 2vw;
-	display: block;
-	border-color: black;
-	border-style: solid;
-	border-width: 1px 1px 0 0;
-}
+	.slideshow__button-previous,
+	.slideshow__button-next {
+		content: '';
+		width: 2vw;
+		height: 2vw;
+		display: block;
+		border-color: black;
+		border-style: solid;
+		border-width: 1px 1px 0 0;
+	}
 
-/* rotate the button to be an arrow left */ 
-.slideshow__button-previous {
-	position: absolute;
-	left: 0;
-	transform: rotate(225deg);
-	top: 50%;
-}
+	/* rotate the button to be an arrow left */ 
+	.slideshow__button-previous {
+		position: absolute;
+		left: 0;
+		transform: rotate(225deg);
+		top: 50%;
+	}
 
-/* rotate the button to be an arrow right */ 
-.slideshow__button-next {
-	position: absolute;
-	right: 0;
-	transform: rotate(45deg);
-	top: 50%;
-}
+	/* rotate the button to be an arrow right */ 
+	.slideshow__button-next {
+		position: absolute;
+		right: 0;
+		transform: rotate(45deg);
+		top: 50%;
+	}
 
-.slideshow__button-next:hover,
-.slideshow__button-previous:hover,
-.slideshow__button-next:focus,
-.slideshow__button-previous:focus {
-	border-width: 2px 2px 0 0;
-	transition: background-color 1s ease;
-}
+	.slideshow__button-next:hover,
+	.slideshow__button-previous:hover,
+	.slideshow__button-next:focus,
+	.slideshow__button-previous:focus {
+		border-width: 2px 2px 0 0;
+		transition: background-color 1s ease;
+	}
 
-.slideshow__navigator {
-	width: 100%;
-	background: none;
-	position: absolute;
-	bottom: -5vh;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	z-index: 20;
-}
+	.slideshow__navigator {
+		width: 100%;
+		background: none;
+		position: absolute;
+		bottom: -5vh;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: center;
+		z-index: 20;
+	}
 
-.slideshow__navigator-dot {
-	background:	none;
-	border: 1px solid black;
-	border-radius: 50%;
-	padding: 0.5rem;
-	margin: 0.2vw;
-}
+	.slideshow__navigator-dot {
+		background:	none;
+		border: 1px solid black;
+		border-radius: 50%;
+		padding: 0.5rem;
+		margin: 0.2vw;
+	}
 
-.slideshow__navigator-dot--active,
-.slideshow__navigator-dot:hover {
-	background: black;
-	opacity: 0.8;
-	/* position: absolute; */
-	bottom: 1vh;
-}	
+	.slideshow__navigator-dot--active,
+	.slideshow__navigator-dot:hover {
+		background: black;
+		opacity: 0.8;
+		/* position: absolute; */
+		bottom: 1vh;
+	}	
+
+	/* add a fading animation to the slideshow-images*/
+	/* used this for reference - https://www.w3schools.com/howto/howto_js_slideshow.asp */
+	.fade {
+		animation-name: fade;
+		animation-duration: 2.5s;
+	}
+
+	@keyframes fade {
+		from {opacity: 0.5;}
+		to {opacity: 1;}
+		
+	}
 }
