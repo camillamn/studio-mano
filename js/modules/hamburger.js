@@ -8,7 +8,7 @@ export default function Hamburger() {
 	const menuButton = document.querySelector('.header__menu-button');
 	
 	// check if the menuButton exists before attaching an "event-listener"
-	// in this case the header exists on every page, so the condition will always be true
+	// in this case the menuButton on header exists on every page, so the condition will always be true
 	if (menuButton) {
 		menuButton.addEventListener('click', handleMenuButtonClick);
 	}
