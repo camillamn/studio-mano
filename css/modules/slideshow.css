@@ -10,7 +10,6 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 .slideshow__subtitle {
@@ -23,7 +22,6 @@
 
 .slideshow__slide {
 	display: flex;
-	/* justify-items: center; */
 	flex-direction: column;
 	width: 100%;
 	margin-top: 2vh;
@@ -40,7 +38,6 @@
 @media screen and (min-width: 768px) {
 
 .slideshow {
-	/* width: 100vw; */
 	height: 100%;
 	flex-direction: row;
 	justify-items: space-between;
