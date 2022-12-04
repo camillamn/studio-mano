@@ -1,15 +1,18 @@
 export default function Slideshow() {
-	/********************** data **********************/
+	
+	// "model"
+	// an abstraction of the HTML (view)
 	let currentSlideIndex = 0;
 
-	/********************** query selectors **********************/
+	// create a reference to the Block (BEM) elements
 	const slideshow = document.querySelector('.slideshow');
 	const slideshowSlides = document.querySelectorAll('.slideshow__slide');
 	const buttonPrevious = document.querySelector('.slideshow__button-previous');
 	const buttonNext = document.querySelector('.slideshow__button-next');
 	const navigatorDots = document.querySelectorAll('.slideshow__navigator-dot');
 
-	/********************** event listeners **********************/
+	// check if the slideshow exists before attaching "event-listeners"
+	// if the main block element exists, so should all other child elements
 	if (slideshow) {
 		buttonPrevious.addEventListener('click', handleButtonPreviousClick);
 		buttonNext.addEventListener('click', handleButtonNextClick);
@@ -22,7 +25,11 @@ export default function Slideshow() {
 		}
 	}
 
-	/********************** event handlers **********************/
+	// split the "handler-functions" into separate functions
+	//		you should see at first sight what "clicking the menuButton" does in the code
+	//		regardless of the way it's implemented. this is "declarative code".
+	//		this means to split the code into more specific functions.
+	//		"functions should do one thing and one thing only", clean code
 	function handleButtonPreviousClick(event) {
 		decreaseCurrentSlideIndex();
 		renderHTML();
@@ -48,13 +55,16 @@ export default function Slideshow() {
 		renderHTML();
 	}
 
-	/********************** methods **********************/
+	// "methods"
+	// the main purpose of these methods is to mutate model variables,
+	// and nothing else. these methods should not be bothered with how the
+	// model is presented to the user, but only what the functionality is
 	function decreaseCurrentSlideIndex() {
 		if (currentSlideIndex > 0) {
 			currentSlideIndex -= 1;
 		} else {
 			currentSlideIndex = slideshowSlides.length - 1;
-		} console.log(decreaseCurrentSlideIndex)
+		} 
 	}
 
 	function increaseCurrentSlideIndex() {
@@ -65,12 +75,15 @@ export default function Slideshow() {
 		}
 	}
 
-
 	function changeCurrentSlideIndex(index) {
 		currentSlideIndex = index;
 	}
 
-	/********************** render **********************/
+	// "render"
+		// this function renders (updates) the needed HTML DOM elements based
+	// on the values of the model. this has to be called after the model
+	// has been updated and should preferrably be called once per update,
+	// and only from the handler function
 	function renderHTML() {
 		for (const slide of slideshowSlides) {
 			slide.classList.remove('slideshow__slide--active');

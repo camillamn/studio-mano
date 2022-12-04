@@ -11,7 +11,7 @@ export default function Navigation() {
    const headerNavigation = document.querySelector('.header__navigation');
 
 	// check if Block exists before adding any other event listeners
-	// if the main block element exists, so should all other child elements
+	// in this case the header exists on every page, so the condition will always be true
 	if (menu) {
 		menuButton.addEventListener('click', handleMenuButtonClick);
 	}
