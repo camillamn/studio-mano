@@ -136,7 +136,7 @@
 		bottom: 1vh;
 	}	
 
-	/* add a fading animation to the slideshow-images*/
+	/* add a fading animation to the slideshow-images */
 	/* used this for reference - https://www.w3schools.com/howto/howto_js_slideshow.asp */
 	.fade {
 		animation-name: fade;
@@ -146,6 +146,5 @@
 	@keyframes fade {
 		from {opacity: 0.5;}
 		to {opacity: 1;}
-		
 	}
 }

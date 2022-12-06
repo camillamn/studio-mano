@@ -1,7 +1,12 @@
- 
+ /* mobile first */
+
+/* * {
+	font-size: 20px;
+} */
+
  body {
 	background-color: #F2ECE7;
-	font-size: 20px;
+	font-size: 30px;
  }
  
  button {
@@ -11,6 +16,18 @@
 	font-size: var(--font-size-regular);
 	cursor: pointer;
  }
+
+ a {
+	font-family: var(	--font-family-main);
+	color: var(--color-text);
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	margin-top: 3vh;
+	transition: all 0.5s ease-in-out;
+}
 
  h1 {
 	font-family: var(--font-family-main);
@@ -32,14 +49,31 @@
 	padding: 0.8rem;
  }
 
- /*  */
- @media screen and (prefers-reduced-motion= reduce) {
+ /* for desktop */
+ @media screen and (min-width: 768px) {
+
+	a {
+		font-family: var(	--font-family-main);
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	li {
+		list-style: none;
+		margin: 0 1.5vw;
+	}
+ }
+
+
+ /* for users who prefers redused motion, to remove animations */
+ @media screen and (prefers-reduced-motion: reduce) {
 	body {
 		scroll-behavior: unset;
 	}
 
-	/* spør Carlo om hvorfor*/
+	/* stop the animations */
 	* {
-		animation-duration: 0.0001ms;
+		animation: none
 	}
-}
+
+ }

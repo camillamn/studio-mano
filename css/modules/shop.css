@@ -32,7 +32,6 @@
 
 .shop__card {
 	width: 90vw;
-	/* background-color: antiquewhite; */
 	display: flex;
 	/* align-items: center; */
 	flex-direction: column;

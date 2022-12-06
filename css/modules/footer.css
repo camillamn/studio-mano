@@ -7,4 +7,5 @@ footer {
 
 .footer__container {
 	font-family: var(--font-family-main);
+	font-size: var(--font-size-regular);
 }

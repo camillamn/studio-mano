@@ -30,7 +30,7 @@
 
 .contact__link {
 	font-family: var(--font-family-second);
-	font-style: italic;
+	font-style: var(--font-style-links);
 }
 
 

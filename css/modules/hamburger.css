@@ -15,10 +15,10 @@
 
 .header__menu-button-burger {
 	width: 1.5rem;
-	height: 0.18vh;
+	height: 0.12rem;
 	background-color: black;
 	opacity: 0.7;
-	border-radius: 5px;
+	border-radius: 0.25rem;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -26,11 +26,11 @@
 .header__menu-button-burger::after {
 	content: '';
 	width: 1.5rem;
-	height: 0.18vh;
+	height: 0.12rem;
 	background: black;
 	position: absolute;
 	left: 0;
-	border-radius: 5px;
+	border-radius: 0.25rem;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -45,6 +45,9 @@
 }
 
 /* animation */
+
+/* I tried to change the variables below to rem instead of pixels, but that did not 
+	work on the transform-properties*/
 
 /* makes the burger go away when menu is visible */
 .header__menu-button--visible .header__menu-button-burger {
