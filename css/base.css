@@ -1,6 +1,7 @@
  
  body {
 	background-color: #F2ECE7;
+	font-size: 20px;
  }
  
  button {
@@ -37,6 +38,7 @@
 		scroll-behavior: unset;
 	}
 
+	/* spør Carlo om hvorfor*/
 	* {
 		animation-duration: 0.0001ms;
 	}
