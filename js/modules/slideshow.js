@@ -26,10 +26,10 @@ export default function Slideshow() {
 	}
 
 	// split the "handler-functions" into separate functions
-	//		you should see at first sight what "clicking the menuButton" does in the code
-	//		regardless of the way it's implemented. this is "declarative code".
-	//		this means to split the code into more specific functions.
-	//		"functions should do one thing and one thing only", clean code
+	//		you should see at first sight what the buttons, keys and dots does 
+	//		in the code regardless of the way it's implemented. this is 
+	//		"declarative code". Split the code into more specific functions.
+	//		"functions should do one thing and one thing only" -clean code
 	function handleButtonPreviousClick(event) {
 		decreaseCurrentSlideIndex();
 		renderHTML();
@@ -80,7 +80,7 @@ export default function Slideshow() {
 	}
 
 	// "render"
-		// this function renders (updates) the needed HTML DOM elements based
+	// this function renders (updates) the needed HTML DOM elements based
 	// on the values of the model. this has to be called after the model
 	// has been updated and should preferrably be called once per update,
 	// and only from the handler function
