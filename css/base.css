@@ -1,8 +1,7 @@
  /* mobile first */
 
  body {
-	background-color: #F2ECE7;
-	font-size: 30px;
+	background-color: var(--background-color);
  }
  
  button {
@@ -49,20 +48,14 @@ li {
  /* for desktop */
  @media screen and (min-width: 768px) {
 
-	a {
-		font-family: var(	--font-family-main);
-		color: var(--color-text);
-		text-decoration: none;
-	}
-
 	li {
-		list-style: none;
 		margin: 0 1.5vw;
 	}
  }
 
 
- /* for users who prefers redused motion, to remove animations */
+ /* for users who prefers redused motion */
+
  @media screen and (prefers-reduced-motion: reduce) {
 	body {
 		scroll-behavior: unset;
