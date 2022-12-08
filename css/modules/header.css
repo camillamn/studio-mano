@@ -12,11 +12,11 @@
 }
 
 .hero {
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 	opacity: 0.8;
 
-	
 	/* https://codetheweb.blog/fullscreen-image-hero/ */
 	background-image: url(../../assets/images/hero_converted_portrait.jpg);
 	background-size: cover;
