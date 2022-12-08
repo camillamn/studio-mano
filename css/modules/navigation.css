@@ -10,7 +10,6 @@
 	background-color: var(--background);
 	display: block;
 	display: flex;
-	opacity: 0.9;
 }
 
 .header__menu {
